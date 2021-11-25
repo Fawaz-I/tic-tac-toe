@@ -4,9 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tic-tac-toe</title>
+    <title>Tic-Tac-Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Play Tic-Tac-Toe</h1>
+    </header>
+    <main>
+      <aside>
+        <h2>Enter your name</h2>
+        <form>
+          <div>
+            <label for="player-name">Player Name</label>
+            <input type="text" name="player-name" id="player-name" />
+          </div>
+          <div>
+            <button type="button" class="btn btn-alt">Cancel</button>
+            <button class="btn">Confirm</button>
+          </div>
+        </form>
+      </aside>
+      <section id="game-config">
+        <ol>
+          <li>
+            <article>
+              <h2>Player 1</h2>
+              <h3>PLAYER NAME</h3>
+              <p>X</p>
+              <button class="btn btn-alt">Edit</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h2>Player 2</h2>
+              <h3>PLAYER NAME</h3>
+              <p>O</p>
+              <button class="btn btn-alt">Edit</button>
+            </article>
+          </li>
+        </ol>
+        <button class="btn">Start New Game</button>
+      </section>
+      <section id="active-game">
+          <article>
+              <h3>You won, <span id="winner-name">PLAYER NAME</span>!</h3>
+              <p>Click "Start New Game" above, to play again!</p>
+          </article>
+        <ol>
+            <p>It's your turn <span id="active-player-name">PLAYER NAME</span>!</p>
+          <li></li>
+          <li></li>
+          <li></li>
+
+          <li></li>
+          <li></li>
+          <li></li>
+
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+    </main>
+    <footer>
+      <p>Built with HTML, CSS and JavaScript by <a href="">Fawaz Ilupeju</a></p>
+    </footer>
+  </body>
 </html>
