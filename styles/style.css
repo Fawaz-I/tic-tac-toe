@@ -20,12 +20,20 @@ header {
   text-align: center;
 }
 
-main {
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+a:hover {
+  border: 1px dotted var(--white);
 }
 
 footer {
   color: var(--white);
-  background-color: var(--black);
+  background-color: var(--brown);
+  padding: 0.25rem 2.5%;
+  text-align: center;
 }
 
 .btn {
@@ -39,17 +47,22 @@ footer {
 }
 
 .btn-alt {
-    background-color: transparent;
-    border-color: transparent;
-    color: var(--brown);
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--brown);
 }
 
 .btn:hover {
-    background-color: #e4b271;
-    border-color: #e4b271;
+  background-color: #e4b271;
+  border-color: #e4b271;
 }
 
 .btn-alt:hover {
-    background-color: #f7e3ca;
-    border-color: transparent;
+  background-color: #f7e3ca;
+  border-color: transparent;
+}
+
+.scale:hover{
+  transform: scale(1.05);
+  transition: .5s;
 }

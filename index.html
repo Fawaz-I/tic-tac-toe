@@ -13,11 +13,12 @@
     />
     <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css" />
     <link rel="stylesheet" href="/styles/style.css" />
-    <link rel="stylesheet" href="/styles/overlays.css">
-    <link rel="stylesheet" href="/styles/configs.css">
+    <link rel="stylesheet" href="/styles/overlays.css" />
+    <link rel="stylesheet" href="/styles/configs.css" />
+    <link rel="stylesheet" href="/styles/game.css" />
   </head>
   <body>
-      <div id="backdrop"></div>
+    <div id="backdrop"></div>
     <header>
       <h1>Play Tic-Tac-Toe</h1>
     </header>
@@ -37,7 +38,7 @@
       </aside>
       <section id="game-config">
         <ol>
-          <li>
+          <li class="scale">
             <article>
               <h2>Player 1</h2>
               <h3>PLAYER NAME</h3>
@@ -45,7 +46,7 @@
               <button class="btn btn-alt">Edit</button>
             </article>
           </li>
-          <li>
+          <li class="scale">
             <article>
               <h2>Player 2</h2>
               <h3>PLAYER NAME</h3>
@@ -57,12 +58,12 @@
         <button class="btn">Start New Game</button>
       </section>
       <section id="active-game">
-          <article>
-              <h3>You won, <span id="winner-name">PLAYER NAME</span>!</h3>
-              <p>Click "Start New Game" above, to play again!</p>
-          </article>
-        <ol>
-            <p>It's your turn <span id="active-player-name">PLAYER NAME</span>!</p>
+        <article id="game-over">
+          <h2>You won, <span id="winner-name">PLAYER NAME</span>!</h2>
+          <p>Click "Start New Game" above, to play again!</p>
+        </article>
+        <p>It's your turn <span id="active-player-name">PLAYER NAME</span>!</p>
+        <ol id="game-board">
           <li></li>
           <li></li>
           <li></li>
@@ -78,7 +79,10 @@
       </section>
     </main>
     <footer>
-      <p>Built with HTML, CSS and JavaScript by <a href="">Fawaz Ilupeju</a></p>
+      <p>
+        Built with HTML, CSS and JavaScript by
+        <a href="https://github.com/fohwaz" class="scale">Fawaz Ilupeju</a>
+      </p>
     </footer>
   </body>
 </html>
