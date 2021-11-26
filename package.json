@@ -1,5 +1,26 @@
 {
   "dependencies": {
     "normalize.css": "^8.0.1"
-  }
+  },
+  "name": "tic-tac-toe",
+  "description": "Live Preview: https://fohwaz.github.io/tic-tac-toe/",
+  "version": "1.0.0",
+  "devDependencies": {
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fohwaz/tic-tac-toe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fohwaz/tic-tac-toe/issues"
+  },
+  "homepage": "https://github.com/fohwaz/tic-tac-toe#readme"
 }
