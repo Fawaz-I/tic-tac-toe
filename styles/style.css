@@ -13,7 +13,7 @@ body {
   background-color: var(--sand);
 }
 
-header {
+#main-header {
   color: var(--white);
   background-color: var(--brown);
   padding: 2rem 5%;
@@ -60,9 +60,4 @@ footer {
 .btn-alt:hover {
   background-color: #f7e3ca;
   border-color: transparent;
-}
-
-.scale:hover{
-  transform: scale(1.05);
-  transition: .5s;
 }
