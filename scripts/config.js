@@ -10,6 +10,7 @@ function closePlayerConfig() {
   formElement.firstElementChild.classList.remove('error');
   errorsOutputElement.textContent = '';
   formElement.firstElementChild.lastElementChild.value = '';
+  nameCheckElement.textContent = '';
 }
 
 function savePlayerConfig(event) {

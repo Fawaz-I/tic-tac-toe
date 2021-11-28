@@ -23,17 +23,7 @@ body {
 a {
   text-decoration: none;
   color: var(--black);
-}
-
-a:hover {
-  border: 1px dotted var(--white);
-}
-
-footer {
-  color: var(--white);
-  background-color: var(--brown);
-  padding: 0.25rem 2.5%;
-  text-align: center;
+  border: none;
 }
 
 .btn {

@@ -24,6 +24,10 @@
     <div id="backdrop"></div>
     <header id="main-header">
       <h1>Play Tic-Tac-Toe</h1>
+      <p>
+        Built with HTML, CSS and JavaScript by
+        <a href="https://github.com/fohwaz">Fawaz Ilupeju</a>
+      </p>
     </header>
     <main>
       <aside class="modal" id="config-overlay">
@@ -74,7 +78,8 @@
             </article>
           </li>
         </ol>
-        <button class="btn">Start New Game</button>
+        <button class="btn" id="start-game-btn">Start New Game</button>
+        <p id="nameCheck"></p>
       </section>
 
       <section id="active-game">
@@ -85,25 +90,19 @@
 
         <p>It's your turn <span id="active-player-name">PLAYER NAME</span>!</p>
         <ol id="game-board">
-          <li class="disabled">X</li>
           <li></li>
-          <li class="disabled">O</li>
-
           <li></li>
-          <li class="disabled">X</li>
           <li></li>
 
-          <li class="disabled">O</li>
+          <li></li>
+          <li></li>
+          <li></li>
+
+          <li></li>
           <li></li>
           <li></li>
         </ol>
       </section>
     </main>
-    <footer>
-      <p>
-        Built with HTML, CSS and JavaScript by
-        <a href="https://github.com/fohwaz">Fawaz Ilupeju</a>
-      </p>
-    </footer>
   </body>
 </html>
